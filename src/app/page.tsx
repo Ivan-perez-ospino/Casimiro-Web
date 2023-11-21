@@ -1,17 +1,16 @@
 'use client';
+
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Fragment } from 'react';
 import Image from 'next/image';
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button, Card, CardHeader, CardBody, Link, Tooltip, Popover, PopoverTrigger, PopoverContent } from '@nextui-org/react';
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button, Card, CardHeader, CardBody, Link, Tooltip, Popover, PopoverTrigger, PopoverContent, Accordion, AccordionItem } from '@nextui-org/react';
 import { NextUIProvider } from '@nextui-org/react';
 import { useTheme } from 'next-themes';
 
 export default function HomePage(): JSX.Element {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const { theme, setTheme } = useTheme()
 
   return (
     <Fragment>
@@ -48,10 +47,10 @@ export default function HomePage(): JSX.Element {
                   <section className='flex items-start justify-evenly flex-wrap gap-10   p-4'>
                     <div className='flex flex-col max-tablet:items-center max-tablet:justify-center'>
                       <h1 className='font-bold text-xl'>INSTITUCIONAL</h1>
-                      <Link href='' className='text-black hover:text-slate-600'>
+                      <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/ugd/f49309_10ff780cf668441e8b5fddbd6f2944e8.pdf' className='text-black hover:text-slate-600'>
                         PEI
                       </Link>
-                      <Link href='' className='text-black hover:text-slate-600'>
+                      <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/ugd/f49309_811e06a05b03482e90d712949a340967.pdf' className='text-black hover:text-slate-600'>
                         Manual De Convivencia
                       </Link>
                       <Link href='/MissionAndVision' className='text-black hover:text-slate-600'>
@@ -119,7 +118,7 @@ export default function HomePage(): JSX.Element {
             <NavbarItem>
               <Link href='' className='text-black'><i className='fi fi-rr-phone-call flex items-center justify-center text-lg mr-2'></i>Contacto</Link>
             </NavbarItem>
-            <NavbarItem>
+       { /* <NavbarItem>
               <Popover>
                 <PopoverTrigger>
                   <p className='flex hover:cursor-pointer'><i className='fi fi-rr-settings flex items-center justify-center text-lg mr-2'></i>Ajustes</p>
@@ -127,13 +126,13 @@ export default function HomePage(): JSX.Element {
                 <PopoverContent>
                   <section>
                     <div>
-                      <button onClick={() => setTheme('light')}>Light Mode</button>
-                      <button onClick={() => setTheme('dark')}>Dark Mode</button>
+                      <Button onClick={() => setTheme('light')}>Light Mode</Button>
+                      <Button onClick={() => setTheme('dark')}>Dark Mode</Button>
                     </div>
                   </section>
                 </PopoverContent>
               </Popover>
-            </NavbarItem>
+            </NavbarItem> */ }
           </NavbarContent>
           <NavbarContent className='hidden min-[530px]:flex' justify='center'>
             <Button color='secondary' variant='shadow' suppressHydrationWarning>Iniciar Sesion</Button>
@@ -141,20 +140,95 @@ export default function HomePage(): JSX.Element {
           </NavbarContent>
           <NavbarMenu className='tablet:hidden'>
             <NavbarMenuItem>
-              <Link href=''>Inicio</Link>
+              <Link href='' className='text-black'>Inicio</Link>
             </NavbarMenuItem>
             <NavbarMenuItem>
-              <Link href='' isDisabled color='secondary'>Blog</Link>
+              <Link href='' isDisabled color='secondary' className='text-black'>Blog</Link>
             </NavbarMenuItem>
             <NavbarMenuItem>
-              <Link href='' color='secondary'>Informacion</Link>
+              <Link href='' color='secondary' className='text-black'>Informacion</Link>
             </NavbarMenuItem>
             <NavbarMenuItem>
-              <Link href='' color='secondary'>Soporte
+              <Link href='' color='secondary' className='text-black'>Soporte
               </Link>
             </NavbarMenuItem>
             <NavbarMenuItem>
-              <Link href='' color='secondary'>Contacto</Link>
+              <Link href='' color='secondary' className='text-black'>Contacto</Link>
+            </NavbarMenuItem>
+            <NavbarMenuItem>
+              <Accordion variant='splitted'>
+                <AccordionItem key='1' aria-label='Institucional' title='Institucional'>
+                  <section className='grid'>
+                    <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/ugd/f49309_10ff780cf668441e8b5fddbd6f2944e8.pdf' className='text-black hover:text-slate-600'>
+                      PEI
+                    </Link>
+                    <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/ugd/f49309_811e06a05b03482e90d712949a340967.pdf' className='text-black hover:text-slate-600'>
+                      Manual De Convivencia
+                    </Link>
+                    <Link href='/MissionAndVision' className='text-black hover:text-slate-600'>
+                      Mision Y Vision
+                    </Link> 
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Cultura Institucional
+                    </Link>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Perfil Casimirista
+                    </Link>
+                  </section>
+                </AccordionItem>
+                <AccordionItem key='2' aria-label='Niveles Educativos' title='Niveles Educativos'>
+                  <section className='grid'>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Primaria
+                    </Link>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Secundaria
+                    </Link>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Ciclos Nocturnos
+                    </Link>
+                  </section>
+                </AccordionItem>
+                <AccordionItem key='3' aria-label='Sedes' title='Sedes'>
+                  <section className='grid'>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Daniel Tapias Pico
+                    </Link>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Casimiro Raul Maestre
+                    </Link>
+                  </section>
+                </AccordionItem>
+                <AccordionItem key='4' aria-label='Servicios' title='Servicios'>
+                  <section className='grid'> 
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Admisiones
+                    </Link>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Recursos TIC
+                    </Link>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Orientacion Escolar
+                    </Link>
+                  </section>
+                </AccordionItem>
+                <AccordionItem key='5' aria-label='Pruebas Saber' title='Pruebas Saber'>
+                  <section className='grid'>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Pruebas Saber 3°
+                    </Link>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Pruebas Saber 5°
+                    </Link>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Pruebas Saber 9°
+                    </Link>
+                    <Link href='' className='text-black hover:text-slate-600'>
+                      Pruebas Saber 11°
+                    </Link>
+                  </section>
+                </AccordionItem>
+              </Accordion>
             </NavbarMenuItem>
           </NavbarMenu>
         </Navbar>
