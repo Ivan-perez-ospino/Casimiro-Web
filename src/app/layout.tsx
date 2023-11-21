@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Outfit } from 'next/font/google';
 import './globals.css';
 
-const poppins = Poppins({
-  weight: ['400', '800'],
-  style: ['normal', 'italic'],
+const outfit = Outfit({
+  weight: ['400', '900'],
+  style: ['normal'],
   subsets: ['latin']
 });
 
@@ -23,7 +23,7 @@ export default function RootLayout({
       <head>
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'></link>
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body className={outfit.className}>{children}</body>
     </html>
   )
 }
