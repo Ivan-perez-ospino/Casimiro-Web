@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Outfit } from 'next/font/google';
 import './globals.css';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 const outfit = Outfit({
   weight: ['400', '900'],
@@ -23,7 +25,11 @@ export default function RootLayout({
       <head>
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'></link>
       </head>
-      <body className={outfit.className}>{children}</body>
+      <body className={outfit.className}>
+        <NavBar />
+          {children}
+        <Footer />
+      </body>
     </html>
   )
 }
