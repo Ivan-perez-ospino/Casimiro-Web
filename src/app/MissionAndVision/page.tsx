@@ -31,7 +31,7 @@ export default function MissionAndVision(): JSX.Element {
             </div>
           </article>
         </section>
-        <section className='flex items-center justify-evenly flex-wrap mt-20'>
+        <section className='flex items-center justify-evenly flex-wrap my-20'>
           <article className='grid place-items-center'>
             <h1 className='font-bold text-4xl max-[530px]:text-lg'>La Calidad Es Nuestro Reto</h1>
             <picture>

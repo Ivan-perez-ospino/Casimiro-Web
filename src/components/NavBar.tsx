@@ -53,7 +53,7 @@ export default function NavBar(): JSX.Element {
                     <Link href='/InstitutionalCulture' className='text-black hover:text-slate-600'>
                       Cultura Institucional
                     </Link>
-                    <Link href='' className='text-black hover:text-slate-600'>
+                    <Link href='/ProfileCasimirista' className='text-black hover:text-slate-600'>
                       Perfil Casimirista
                     </Link>
                   </div>
@@ -134,7 +134,7 @@ export default function NavBar(): JSX.Element {
         </NavbarContent>
         <NavbarMenu className='tablet:hidden'>
           <NavbarMenuItem>
-            <Link href='' className='text-black'>Inicio</Link>
+            <Link href='/' className='text-black'>Inicio</Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
             <Link href='' isDisabled color='secondary' className='text-black'>Blog</Link>
@@ -162,10 +162,10 @@ export default function NavBar(): JSX.Element {
                   <Link href='/MissionAndVision' className='text-black hover:text-slate-600'>
                     Mision Y Vision
                   </Link>
-                  <Link href='' className='text-black hover:text-slate-600'>
+                  <Link href='/InstitutionalCulture' className='text-black hover:text-slate-600'>
                     Cultura Institucional
                   </Link>
-                  <Link href='' className='text-black hover:text-slate-600'>
+                  <Link href='/ProfileCasimirista' className='text-black hover:text-slate-600'>
                     Perfil Casimirista
                   </Link>
                 </section>
