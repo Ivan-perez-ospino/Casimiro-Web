@@ -1,7 +1,7 @@
 'use client';
 
 import { Fragment } from 'react';
-import Image from 'next/image';
+import { Image } from '@nextui-org/react';
 
 export default function InstituyionalCulture(): JSX.Element {
   return (
@@ -10,7 +10,7 @@ export default function InstituyionalCulture(): JSX.Element {
         <section>
           <article className='flex flex-wrap items-center justify-evenly'>
             <main>
-              <h1 className='text-4xl font-extrabold max-[530px]:text-2xl'>Cultura Institucional</h1>
+              <h1 className='text-6xl font-extrabold max-[530px]:text-2xl'>Cultura Institucional</h1>
             </main>
             <picture>
               <Image src='/designer-flatline.svg' alt='Image Culture' width={700} height={700}></Image>

@@ -1,7 +1,7 @@
 'use client';
 
 import { Fragment } from 'react';
-import Image from 'next/image';
+import { Image } from '@nextui-org/react';
 
 export default function MissionAndVision(): JSX.Element {
   return (
@@ -10,7 +10,7 @@ export default function MissionAndVision(): JSX.Element {
         <section className='flex justify-evenly flex-wrap mt-5'>
           <article className='w-unit-7xl flex flex-col max-tablet:m-10'>
             <main>
-              <h1 className='font-extrabold text-4xl text-center max-[530px]:text-lg'>Nuestra Mision</h1>
+              <h1 className='font-extrabold text-5xl text-center max-[530px]:text-lg'>Nuestra Mision</h1>
             </main>
             <picture>
               <Image src='./startup-flatline.svg' alt='Image Startup' width={600} height={600}></Image>
@@ -21,7 +21,7 @@ export default function MissionAndVision(): JSX.Element {
           </article>
           <article className='w-unit-7xl flex flex-col max-tablet:m-10'>
             <main>
-              <h1 className='font-extrabold text-4xl text-center max-[530px]:text-lg'>Nuestra Vision</h1>
+              <h1 className='font-extrabold text-5xl text-center max-[530px]:text-lg'>Nuestra Vision</h1>
             </main>
             <picture>
               <Image src='./startup-flatline-0066b.svg' alt='Image Vission' width={600} height={600}></Image>
@@ -33,9 +33,9 @@ export default function MissionAndVision(): JSX.Element {
         </section>
         <section className='flex items-center justify-evenly flex-wrap my-20'>
           <article className='grid place-items-center'>
-            <h1 className='font-bold text-4xl max-[530px]:text-lg'>La Calidad Es Nuestro Reto</h1>
+            <h1 className='font-bold text-5xl max-[530px]:text-lg'>La Calidad Es Nuestro Reto</h1>
             <picture>
-              <Image src='./quality-check-flatline.svg' alt='Image Quality' width={400} height={400}></Image>
+              <Image src='./quality-check-flatline.svg' alt='Image Quality' width={800} height={800}></Image>
             </picture>
           </article>
           <article className='grid grid-cols-2 text-violet-800 max-[530px]:text-xs'>

@@ -80,7 +80,7 @@ export default function NavBar(): JSX.Element {
                   </div>
                   <div className='flex flex-col max-tablet:items-center max-tablet:justify-center'>
                     <h1 className='font-bold text-xl'>SERVICIOS</h1>
-                    <Link href='' className='text-black hover:text-slate-600'>
+                    <Link href='/Admissions' className='text-black hover:text-slate-600'>
                       Admisiones
                     </Link>
                     <Link href='' className='text-black hover:text-slate-600'>
@@ -92,16 +92,16 @@ export default function NavBar(): JSX.Element {
                   </div>
                   <div className='flex flex-col max-tablet:items-center max-tablet:justify-center'>
                     <h1 className='font-bold text-xl'>PRUEBAS SABER</h1>
-                    <Link href='' className='text-black hover:text-slate-600'>
+                    <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/archives/f49309_2e239fd8aaa143828edd7f1fe3850766.rar?dn=saber-3.rar' className='text-black hover:text-slate-600'>
                       Pruebas Saber 3°
                     </Link>
-                    <Link href='' className='text-black hover:text-slate-600'>
+                    <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/archives/f49309_3dfbf265fb1046a98b81d2cbf86230e8.rar?dn=saber-5.rar' className='text-black hover:text-slate-600'>
                       Pruebas Saber 5°
                     </Link>
-                    <Link href='' className='text-black hover:text-slate-600'>
+                    <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/archives/f49309_35665f874d8d4bfa97a06af918d99176.rar?dn=saber-9.rar' className='text-black hover:text-slate-600'>
                       Pruebas Saber 9°
                     </Link>
-                    <Link href='' className='text-black hover:text-slate-600'>
+                    <Link href='https://colcasimiroraul.wixsite.com/iecasimiro/pruebas-saber-11' className='text-black hover:text-slate-600'>
                       Pruebas Saber 11°
                     </Link>
                   </div>
@@ -112,21 +112,6 @@ export default function NavBar(): JSX.Element {
           <NavbarItem>
             <Link href='' className='text-black'><i className='fi fi-rr-phone-call flex items-center justify-center text-lg mr-2'></i>Contacto</Link>
           </NavbarItem>
-          { /* <NavbarItem>
-              <Popover>
-                <PopoverTrigger>
-                  <p className='flex hover:cursor-pointer'><i className='fi fi-rr-settings flex items-center justify-center text-lg mr-2'></i>Ajustes</p>
-                </PopoverTrigger>
-                <PopoverContent>
-                  <section>
-                    <div>
-                      <Button onClick={() => setTheme('light')}>Light Mode</Button>
-                      <Button onClick={() => setTheme('dark')}>Dark Mode</Button>
-                    </div>
-                  </section>
-                </PopoverContent>
-              </Popover>
-            </NavbarItem> */ }
         </NavbarContent>
         <NavbarContent className='hidden min-[530px]:flex' justify='center'>
           <Button color='secondary' variant='shadow'>Iniciar Sesion</Button>

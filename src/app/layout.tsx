@@ -26,7 +26,7 @@ export default function RootLayout({
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'></link>
       </head>
       <body className={outfit.className}>
-        <NavBar />
+        <NavBar /> 
           {children}
         <Footer />
       </body>

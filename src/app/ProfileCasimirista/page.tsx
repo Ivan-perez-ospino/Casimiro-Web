@@ -9,7 +9,7 @@ export default function ProfileCasimirista(): JSX.Element {
       <section className='grid grid-cols-2 max-tablet:grid-cols-1 px-5 mt-10'>
         <article className='mx-5'>
           <main>
-            <h1 className='font-extrabold text-4xl text-center max-[530px]:text-xl max-[350px]:text-sm'>Perfil Del Estudiante Casimirista</h1>
+            <h1 className='font-extrabold text-5xl text-center max-[530px]:text-xl max-[350px]:text-sm'>Perfil Del Estudiante Casimirista</h1>
             <picture className='flex items-center justify-center'>
               <Image src='/personal-data-flatline.svg' alt='Image Personal Data' width={500} height={500}></Image>
             </picture>
@@ -21,7 +21,7 @@ export default function ProfileCasimirista(): JSX.Element {
         </article>
         <article className='mx-5'>
           <picture className='flex items-center justify-center max-tablet:my-10'>
-            <Image src='/IMAGEN ESTUDIANTES CRM.webp' alt='Image Students' width={500} height={500} isZoomed isBlurred></Image>
+            <Image src='/IMAGEN ESTUDIANTES CRM.webp' alt='Image Students' width={500} height={500}></Image>
           </picture>
           <div className='flex flex-col text-center my-10'>
             <div>
