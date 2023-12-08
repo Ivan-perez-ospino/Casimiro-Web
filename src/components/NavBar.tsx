@@ -180,7 +180,7 @@ export default function NavBar(): JSX.Element {
               </AccordionItem>
               <AccordionItem key='4' aria-label='Servicios' title='Servicios'>
                 <section className='grid'>
-                  <Link href='' className='text-black hover:text-slate-600'>
+                  <Link href='/Admissions' className='text-black hover:text-slate-600'>
                     Admisiones
                   </Link>
                   <Link href='' className='text-black hover:text-slate-600'>

@@ -1,7 +1,7 @@
 'use client';
 
 import { Fragment } from 'react';
-import { Image, Table, TableHeader, TableBody, TableColumn, TableRow, TableCell } from '@nextui-org/react';
+import { Image, Table, TableHeader, TableBody, TableColumn, TableRow, TableCell, Listbox, ListboxItem } from '@nextui-org/react';
 
 export default function Admissions(): JSX.Element {
   return (
@@ -144,6 +144,99 @@ export default function Admissions(): JSX.Element {
                 </TableRow>
               </TableBody>
             </Table>
+          </article>
+        </section>
+        <section className='my-20'> 
+          <main className='flex flex-col items-center justify-center max-tablet:px-4 my-5'>
+            <h1 className='font-extrabold text-6xl text-center max-[530px]:text-4xl max-[400px]:text-2xl max-[530px]:my-4'>Requisitos De Matricula</h1>
+            <h1 className='font-bold text-5xl text-center max-[530px]:text max-[400px]:text-lg'>Estudiantes Antiguos De Secundaria</h1>
+          </main>
+          <picture className='hidden max-tablet:flex max-tablet:items-center max-tablet:justify-center'>
+            <Image src='./group-presentation-flatline.svg' alt='Image Group Presentation' width={500} height={500}></Image>
+          </picture>
+          <article className='flex items-center justify-evenly my-10 max-tablet:flex-col'>
+            <Listbox aria-label='actions' className='w-2/5 max-tablet:w-full p-2' variant='shadow' color='danger'>
+              <ListboxItem key={'1'} aria-label='actions'>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Formato de matricula devidamente diligenciado sin tachones.</p>
+              </ListboxItem>
+              <ListboxItem key={'2'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Carpeta plastificada color azul rey con su respectivo gancho.</p>
+              </ListboxItem>
+              <ListboxItem key={'3'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Fotocopia de la tarjeta de identidad del estudiante al 150%.</p>
+              </ListboxItem>
+              <ListboxItem key={'4'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Fotocopia del registro civil en buen estado.</p>
+              </ListboxItem>
+              <ListboxItem key={'5'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Fotocopia de la cedula del acudiente al 150%.</p>
+              </ListboxItem>
+              <ListboxItem key={'6'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Dos fotos recientes en buen estado.</p>
+              </ListboxItem>
+              <ListboxItem key={'7'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Fotocopia del recibo de la luz.</p>
+              </ListboxItem>
+              <ListboxItem key={'8'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Boletin original del año anterior (2023).</p>
+              </ListboxItem>
+              <ListboxItem key={'9'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Sisben actualizado.</p>
+              </ListboxItem>
+              <ListboxItem key={'10'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Copia del carnet de salud (CERTIFICADO ADRES).</p>
+              </ListboxItem>
+            </Listbox>
+            <picture className='max-tablet:hidden'>
+              <Image src='./group-presentation-flatline.svg' alt='Image Group Presentation' width={500} height={500}></Image>
+            </picture>
+          </article>
+          <main className='flex flex-col items-center justify-center max-tablet:px-4'>
+            <h1 className='font-extrabold text-6xl text-center max-[530px]:text-4xl max-[530px]:my-4 max-[400px]:text-2xl'>Requisitos De Matricula</h1>
+            <h1 className='font-bold text-5xl text-center max-[530px]:text-2xl max-[400px]:text-lg'>Estudiantes Del Grado 5 A 6</h1>
+          </main>
+          <picture className='hidden max-tablet:flex max-tablet:items-center max-tablet:justify-center'>
+            <Image src='./project-presentation-flatline.svg' alt='Image Project Presentation' width={500} height={500}></Image>
+          </picture>
+          <article className='flex items-center justify-evenly my-10 max-tablet:flex-col'>
+            <picture className='max-tablet:hidden'>
+              <Image src='./project-presentation-flatline.svg' alt='Image Project Presentation' width={500} height={500}></Image>
+            </picture>
+            <Listbox aria-label='actions' className='w-2/5 max-tablet:w-full p-2' variant='shadow' color='danger'>
+              <ListboxItem key={'1'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Formato de matricula (FOTOCOPIADORA).</p>
+              </ListboxItem>
+              <ListboxItem key={'2'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Carpeta plastificada color azul rey con su respectivo gancho.</p>
+              </ListboxItem>
+              <ListboxItem key={'3'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Fotocopia de la tarjeta de identidad del estudiante al 150%.</p>
+              </ListboxItem>
+              <ListboxItem key={'4'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Fotocopia del registro civil en buen estado.</p>
+              </ListboxItem>
+              <ListboxItem key={'5'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Fotocopia de la cedula del acudiente al 150%.</p>
+              </ListboxItem>
+              <ListboxItem key={'6'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Dos fotos recientes en buen estado.</p>
+              </ListboxItem>
+              <ListboxItem key={'7'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Fotocopia del recibo de la luz.</p>
+              </ListboxItem>
+              <ListboxItem key={'8'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Boletin original del año anterior (2023).</p>
+              </ListboxItem>
+              <ListboxItem key={'9'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Solo para la matricula la matricula del grado sexto carpeta<br/>plastificada color amarillo con su gancho.</p>
+              </ListboxItem>
+              <ListboxItem key={'10'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Sisben actualizado.</p>
+              </ListboxItem>  
+              <ListboxItem key={'11'} aria-label=''>
+                <p className='max-tablet:text-center max-[450px]:text-xs'>Copia del carnet de salud (CERTIFICADO ADRES).</p>
+              </ListboxItem>
+            </Listbox>
           </article>
         </section>
       </section>
