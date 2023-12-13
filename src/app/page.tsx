@@ -4,7 +4,7 @@ import React from 'react';
 import { Fragment } from 'react';
 import Image from 'next/image';
 import { Button, Card, CardHeader, CardBody } from '@nextui-org/react';
-import { NextUIProvider } from '@nextui-org/react';
+import { NextUIProvider, Link } from '@nextui-org/react';
 
 export default function HomePage(): JSX.Element {
   return (
@@ -18,8 +18,9 @@ export default function HomePage(): JSX.Element {
               <Image src='./world-wide-web-flatline.svg' alt='Image Word Wide Web' width={500} height={500}></Image>
             </picture>
             <div className='hidden max-[530px]:flex max-[530px]:justify-evenly'>
-              <Button color='secondary' variant='shadow'>Iniciar Sesion</Button>
-              <Button color='secondary' variant='shadow'>Registrarse</Button>
+              <Link href=''>
+                <Button color='secondary' variant='shadow' className='max-[530px]:text-lg p-6 max-[310px]:p-4'>Iniciar Sesion Con Google</Button>
+              </Link>
             </div>
           </div>
           <div className='flex flex-wrap items-center justify-evenly h-screen max-tablet:h-auto max-tablet:my-20 max-tablet:flex-wrap-reverse'>
@@ -61,7 +62,7 @@ export default function HomePage(): JSX.Element {
                 </CardHeader>
                 <CardBody className='flex items-center justify-center'>
                   <picture className='flex items-center justify-center'>
-                    <Image src='./calendar-outline.svg' alt='Image Calendar' width={300} height={300}></Image>
+                    <Image src='./calendar-flatline.svg' alt='Image Calendar' width={300} height={300}></Image>
                   </picture>
                   <p className='text-center'>Te brindamos un calendario de eventos, examenes, etc</p>
                 </CardBody>

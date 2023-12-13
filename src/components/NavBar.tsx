@@ -2,6 +2,7 @@
 
 import { Fragment, useState } from 'react';
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Tooltip, Popover, PopoverTrigger, PopoverContent, Accordion, AccordionItem, Button } from '@nextui-org/react';
+import { signIn } from 'next-auth/react';
 
 export default function NavBar(): JSX.Element {
 
@@ -24,7 +25,7 @@ export default function NavBar(): JSX.Element {
           <NavbarItem>
             <Link href='/' className='text-black'><i className='fi fi-rr-home flex items-center justify-center text-lg mr-2'></i> Inicio</Link>
           </NavbarItem>
-          <Tooltip content='Funcion Inhabilitada' color='secondary'>
+          <Tooltip content='Funcion En Progreso' color='secondary'>
             <NavbarItem>
               <Link href='' isDisabled className='text-black'><i className='fi fi-rr-blog-text flex items-center justify-center text-lg mr-2'></i>Blog</Link>
             </NavbarItem>
@@ -114,8 +115,7 @@ export default function NavBar(): JSX.Element {
           </NavbarItem>
         </NavbarContent>
         <NavbarContent className='hidden min-[530px]:flex' justify='center'>
-          <Button color='secondary' variant='shadow'>Iniciar Sesion</Button>
-          <Button color='secondary' variant='shadow'>Registrarse</Button>
+          <Button color='secondary' variant='shadow' onClick={() => signIn()}>Iniciar Sesion Con Google</Button>
         </NavbarContent>
         <NavbarMenu className='tablet:hidden'>
           <NavbarMenuItem>
