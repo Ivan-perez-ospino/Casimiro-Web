@@ -3,8 +3,7 @@
 import React from 'react';
 import { Fragment } from 'react';
 import Image from 'next/image';
-import { Button, Card, CardHeader, CardBody } from '@nextui-org/react';
-import { NextUIProvider, Link } from '@nextui-org/react';
+import { Card, CardHeader, CardBody, NextUIProvider, Link } from '@nextui-org/react';
 
 export default function HomePage(): JSX.Element {
   return (
@@ -18,9 +17,9 @@ export default function HomePage(): JSX.Element {
               <Image src='./world-wide-web-flatline.svg' alt='Image Word Wide Web' width={500} height={500}></Image>
             </picture>
             <div className='hidden max-[530px]:flex max-[530px]:justify-evenly'>
-              <Link href=''>
+         { /* <Link href=''>
                 <Button color='secondary' variant='shadow' className='max-[530px]:text-lg p-6 max-[310px]:p-4'>Iniciar Sesion Con Google</Button>
-              </Link>
+              </Link> */ }
             </div>
           </div>
           <div className='flex flex-wrap items-center justify-evenly h-screen max-tablet:h-auto max-tablet:my-20 max-tablet:flex-wrap-reverse'>
@@ -91,6 +90,18 @@ export default function HomePage(): JSX.Element {
               <Image src='./marketing-flatline-eda0a.svg' alt='Image Social Network' width={500} height={500}></Image>
             </picture>
             <h1 className='font-bold text-3xl text-center w-2/4 max-tablet:w-auto max-tablet:mx-2 max-[530px]:text-xl'>Unete y se parte del blog escolar donde los docentes se suman a aportar publicaciones de eventos o dias especiales</h1>
+          </section>
+          <section>
+            <main>
+              <h1 className='font-extrabold text-4xl text-center max-[530px]:text-2xl'>Explora Nuestras Redes Sociales:</h1>
+            </main>
+            <div className='flex items-center justify-center my-5 gap-5'>
+              <Link href='https://www.instagram.com/iecasimiroraul/'><Image src='/instagram.png' alt='Instagram Icon' width={30} height={30}></Image></Link>
+              <Link href='https://twitter.com/iemaestre'><Image src='/gorjeo.png' alt='X Icon' width={30} height={30}></Image></Link>
+              <Link href='https://www.facebook.com/iecasimiroraul/'><Image src='/facebook.png' alt='Facebook Icon' width={30} height={30}></Image></Link>
+              <Link href='https://www.youtube.com/channel/UCMVDAajsLiRpCi6vhEReCPw?view_as=subscriber'><Image src='/youtube.png' alt='Youtube Icon' width={30} height={30}></Image></Link>
+            </div>
+            <h1 className='font-bold text-2xl text-center my-10'>¡Todas Las Funciones Estaran Habilitadas El Año Que Sigue Esperalas Con Ansia!</h1>
           </section>
       </NextUIProvider>
     </Fragment>

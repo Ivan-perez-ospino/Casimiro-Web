@@ -28,6 +28,21 @@ const config: Config = {
     },
   },
   darkMode: 'class',
-  plugins: [nextui()],
+  plugins: [nextui({
+    themes: {},
+    layout: {
+      radius: {
+        small: '1px', // rounded-small
+        medium: '4px', // rounded-medium
+        large: '6px', // rounded-large
+      },
+      borderWidth: {
+        small: '1px', // border-small
+        medium: '1px', // border-medium
+        large: '2px', // border-large
+      },
+    },
+  })],
 }
+
 export default config
