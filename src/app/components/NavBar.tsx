@@ -1,11 +1,15 @@
 'use client';
 
+ 
 import { Fragment, useState } from 'react';
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Popover, PopoverTrigger, PopoverContent, Accordion, AccordionItem, Image } from '@nextui-org/react';
 
+
 export default function NavBar(): JSX.Element {
 
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   return (
     <Fragment>
@@ -14,60 +18,77 @@ export default function NavBar(): JSX.Element {
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           className='tablet:hidden'
         />
+
+
         <NavbarContent justify='center'>
           <NavbarBrand>
+            <Image src='/casimiro-logo.svg' alt='Logo' className='w-8 mr-2' />
             <h1>Casimiro Web</h1>
           </NavbarBrand>
         </NavbarContent>
-        <NavbarContent className='hidden laptop:flex gap-4' justify='center'>
+
+
+        <NavbarContent className='hidden laptop:flex gap-4' justify='end'>
           <NavbarItem>
-            <Link href='/' className='text-black'><i className='fi fi-rr-home flex items-center justify-center text-lg mr-2'></i> Inicio</Link>
+            <Link href='/' className='text-black hover:text-blue-600'><i className='fi fi-rr-home flex items-center justify-center text-lg mr-2'></i> Inicio</Link>
           </NavbarItem>
-     { /* <Tooltip content='Funcion En Progreso' color='secondary'>
-            <NavbarItem>
-              <Link href='' isDisabled className='text-black'><i className='fi fi-rr-blog-text flex items-center justify-center text-lg mr-2'></i>Blog</Link>
-            </NavbarItem>
-          </Tooltip> */ }
+
+
           <NavbarItem>
-            <Popover placement='bottom' className='max-tablet:hidden'>
+            <Link href='/SignInTeacher' className='text-black hover:text-blue-600'><i className='fi fi-rr-man-head flex items-center justify-center text-lg mr-2'></i>¿Eres Docente?</Link>
+          </NavbarItem>
+
+
+          <NavbarItem>
+            <Link href='/SignInStudent' className='text-black hover:text-blue-600'><i className='fi fi-rr-graduation-cap flex items-center justify-center text-lg mr-2'></i>¿Eres Estudiante?</Link>
+          </NavbarItem>
+
+
+          <NavbarItem>
+            <Link href='/News' className='text-black hover:text-blue-600'><i className='fi fi-rr-bell flex items-center justify-center text-lg mr-2'></i>Novedades</Link>
+          </NavbarItem>
+
+
+          <NavbarItem>
+            <Popover placement='bottom' className='max-tablet:hidden' showArrow backdrop='blur' radius='none'>
               <PopoverTrigger>
                 <p className='flex hover:cursor-pointer'><i className='fi fi-rr-info flex items-center justify-center text-lg mr-2'></i>Informacion Institucional</p>
               </PopoverTrigger>
               <PopoverContent>
-                <section className='flex items-start justify-evenly flex-wrap gap-10   p-4'>
+                <section className='flex items-start justify-evenly flex-wrap gap-10 p-4'>
                   <div className='flex flex-col max-tablet:items-center max-tablet:justify-center'>
                     <h1 className='font-bold text-xl'>INSTITUCIONAL</h1>
-                    <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/ugd/f49309_10ff780cf668441e8b5fddbd6f2944e8.pdf' className='text-black hover:text-slate-600'>
+                    <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/ugd/f49309_10ff780cf668441e8b5fddbd6f2944e8.pdf' className='text-black hover:text-blue-600'>
                       PEI
                     </Link>
-                    <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/ugd/f49309_811e06a05b03482e90d712949a340967.pdf' className='text-black hover:text-slate-600'>
+                    <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/ugd/f49309_811e06a05b03482e90d712949a340967.pdf' className='text-black hover:text-blue-600'>
                       Manual De Convivencia
                     </Link>
-                    <Link href='/MissionAndVision' className='text-black hover:text-slate-600'>
+                    <Link href='/MissionAndVision' className='text-black hover:text-blue-600'>
                       Mision Y Vision
                     </Link>
-                    <Link href='/InstitutionalCulture' className='text-black hover:text-slate-600'>
+                    <Link href='/InstitutionalCulture' className='text-black hover:text-blue-600'>
                       Cultura Institucional
                     </Link>
-                    <Link href='/ProfileCasimirista' className='text-black hover:text-slate-600'>
+                    <Link href='/ProfileCasimirista' className='text-black hover:text-blue-600'>
                       Perfil Casimirista
                     </Link>
                   </div>
                   <div className='flex flex-col max-tablet:items-center max-tablet:justify-center'>
                     <h1 className='font-bold text-xl'>NIVELES EDUCATIVOS</h1>
-                    <Link href='/LevelPrimary' className='text-black hover:text-slate-600'>
+                    <Link href='/LevelPrimary' className='text-black hover:text-blue-600'>
                       Primaria
                     </Link>
-                    <Link href='/LevelSecondary' className='text-black hover:text-slate-600'>
+                    <Link href='/LevelSecondary' className='text-black hover:text-blue-600'>
                       Secundaria
                     </Link>
-                    <Link href='/LevelNightCicles' className='text-black hover:text-slate-600'>
+                    <Link href='/LevelNightCicles' className='text-black hover:text-blue-600'>
                       Formacion Por Ciclos
                     </Link>
                   </div>
                   <div className='flex flex-col max-tablet:items-center max-tablet:justify-center'>
                     <h1 className='font-bold text-xl'>SERVICIOS</h1>
-                    <Link href='/Admissions' className='text-black hover:text-slate-600'>
+                    <Link href='/Admissions' className='text-black hover:text-blue-600'>
                       Admisiones
                     </Link>
                   </div>
@@ -75,28 +96,39 @@ export default function NavBar(): JSX.Element {
               </PopoverContent>
             </Popover>
           </NavbarItem>
-          <NavbarItem>
-            <Link href='' className='text-black'><i className='fi fi-rr-interrogation flex items-center justify-center text-lg mr-2'></i>Soporte</Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link href='' className='text-black'><i className='fi fi-rr-phone-call flex items-center justify-center text-lg mr-2'></i>Contacto</Link>
-          </NavbarItem>
+
+
+          {/* <NavbarItem>
+            <Link href='' className='text-black hover:text-blue-600'><i className='fi fi-rr-interrogation flex items-center justify-center text-lg mr-2'></i>Soporte</Link>
+          </NavbarItem> */}
+
+
+        {/*  <NavbarItem>
+            <Link href='' className='text-black hover:text-blue-600'><i className='fi fi-rr-phone-call flex items-center justify-center text-lg mr-2'></i>Contacto</Link>
+          </NavbarItem> */}
+
+
         </NavbarContent>
-  { /*  <NavbarContent className='hidden min-[530px]:flex' justify='center'>
-          <Button color='secondary' variant='shadow'>Iniciar Sesion Con Google</Button> 
-        </NavbarContent>  */ }
+
+
         <NavbarMenu className='tablet:hidden'>
           <NavbarMenuItem>
             <Link href='/' className='text-black'>Inicio</Link>
           </NavbarMenuItem>
+
+
           <NavbarMenuItem>
             <Link href='' color='secondary' className='text-black'>Soporte Tecnico</Link>
           </NavbarMenuItem>
+
+
           <NavbarMenuItem>
             <Link href='' color='secondary' className='text-black'>Contacto</Link>
           </NavbarMenuItem>
+
+
           <NavbarMenuItem>
-            <Accordion variant='splitted'>
+            <Accordion variant='light'>
               <AccordionItem key='1' aria-label='Institucional' title='Institucional'>
                 <section className='grid'>
                   <Link href='https://9d22257e-b846-49fe-9b60-758f6b03d328.filesusr.com/ugd/f49309_10ff780cf668441e8b5fddbd6f2944e8.pdf' className='text-black hover:text-slate-600'>
@@ -138,6 +170,8 @@ export default function NavBar(): JSX.Element {
               </AccordionItem>
             </Accordion>
           </NavbarMenuItem>
+
+
         </NavbarMenu>
       </Navbar>
     </Fragment>

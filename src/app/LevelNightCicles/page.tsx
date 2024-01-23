@@ -1,11 +1,15 @@
 import { Fragment } from 'react';
+import NavBar from '../components/NavBar';
 
 export default function LevelNightCicles(): JSX.Element {
+
+  
   return (
     <Fragment>
+      <NavBar />
       <div className='my-20 px-10 max-[530px]:px-5'>
         <main>
-          <h1 className='font-extrabold text-6xl text-center max-tablet:text-4xl'>Niveles Educativos De Formacion Por Ciclos</h1>
+          <h1 className='font-extrabold text-6xl text-center max-[455px]:text-4xl max-[396px]:text-xl'>Niveles Educativos De Formacion Por Ciclos</h1>
           <section> 
             <div className='my-10'>
               <h4 className='font-bold text-2xl text-center max-tablet:text-xl'>Niveles Educativos De Ciclos Nocturnos</h4>
