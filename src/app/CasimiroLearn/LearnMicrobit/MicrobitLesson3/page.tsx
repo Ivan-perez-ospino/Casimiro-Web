@@ -46,7 +46,7 @@ export default function MicrobitLesson4(): JSX.Element {
 
 
         <div className='flex items-center justify-between mt-10'>
-          <Link href='/CasimiroLearn/LearnMicrobit' className=''>
+          <Link href='/CasimiroLearn/LearnMicrobit/MicrobitLesson2' className=''>
             <Button color='primary' radius='none' className='text-xl p-6 max-[396px]:w-full min-[455px]:text-lg max-[455px]:py-2 max-[396px]:text-small' variant='ghost'>Anterior</Button>
           </Link>
           <Link href='/CasimiroLearn/LearnMicrobit/MicrobitLesson4' className=''>

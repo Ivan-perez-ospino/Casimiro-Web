@@ -2,25 +2,21 @@
 
 
 import { Fragment } from 'react';
-import NavBar from '../components/NavBar';
+import NavBar from '../components/Navbar';
 import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell, Divider } from '@nextui-org/react';
 
 
 export default function News(): JSX.Element {
-
-
   return (
     <Fragment>
       <NavBar />
       <div className='my-20 px-10 max-[530px]:px-5'>
         <Divider className='my-5' />
-        <main className='flex justify-evenly my-20 max-tablet:grid max-tablet:items-center max-tablet:justify-center'>
+        <div className='flex justify-evenly my-20 max-tablet:grid max-tablet:items-center max-tablet:justify-center'>
           <div>
             <div>
               <h1 className='font-bold text-2xl text-center my-5 max-[530px]:text-lg'>Fechas De Matricula Para Diciembre Del 2023</h1>
             </div>            
-
-
             <Table aria-label='table'>
               <TableHeader>
                 <TableColumn>
@@ -64,8 +60,6 @@ export default function News(): JSX.Element {
               </TableBody>
             </Table>
           </div>
-
-
           <div>
             <div>
               <h1 className='font-bold text-2xl text-center my-5 max-[530px]:text-lg'>Fechas De Matriculas Para Enero Del 2024</h1>
@@ -131,9 +125,7 @@ export default function News(): JSX.Element {
               </TableBody>
             </Table>
           </div>
-
-
-        </main>
+        </div>
       </div>
     </Fragment>
   );

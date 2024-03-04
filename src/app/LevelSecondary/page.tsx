@@ -1,10 +1,11 @@
+'use client';
+
+
 import { Fragment } from 'react';
-import NavBar from '../components/NavBar';
+import NavBar from '../components/Navbar';
 
 
 export default function LevelSecondary(): JSX.Element {
-
-
   return (
     <Fragment>
       <NavBar />
@@ -12,9 +13,7 @@ export default function LevelSecondary(): JSX.Element {
         <main>
           <h1 className='font-extrabold text-6xl text-center max-[455px]:text-4xl max-[396px]:text-xl'>Niveles Educativos De Basica Secundaria Y Media</h1>
           <section>
-
-            
-              <div className='my-10'>
+            <div className='my-10'>
               <h4 className='font-bold text-2xl text-center max-[396px]:text-xl'>Niveles Educativos De La Basica Secundaria:</h4>
                 <ul className='flex flex-wrap gap-10 items-center justify-evenly my-10'>
                   <li>1. Sexto</li>
@@ -23,17 +22,13 @@ export default function LevelSecondary(): JSX.Element {
                   <li>4. Noveno</li>
                 </ul>
               </div>
-
-
               <div className='my-10'>
                 <h4 className='font-bold text-2xl text-center max-[396px]:text-xl'>Niveles Educativos De Media Secundaria:</h4>
                 <ul className='flex flex-wrap gap-10 items-center justify-evenly my-10'>
                   <li>5. Decimo</li>
                   <li>6. Once</li>
                 </ul>
-              </div>
-
-
+            </div>
           </section>
         </main>
       </div>

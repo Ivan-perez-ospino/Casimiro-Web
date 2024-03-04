@@ -2,23 +2,21 @@
 
 
 import { Fragment } from 'react';
+import NavBar from '../components/Navbar';
 import { Image } from '@nextui-org/react';
-import NavBar from '../components/NavBar';
 
 
 export default function Admissions(): JSX.Element {
-
-
   return (
     <Fragment>
       <NavBar />
       <div className='my-20 px-10 max-[530px]:px-5'>
-        <main className='my-10'>
+        <div className='my-10'>
           <h1 className='font-extrabold text-6xl text-center max-[455px]:text-4xl max-[396px]:text-xl'>Admisiones</h1>
-        </main>
+        </div>
 
 
-        <section className='flex items-start justify-evenly max-tablet:grid max-tablet:place-items-center'>
+        <div className='flex items-start justify-evenly max-tablet:grid max-tablet:place-items-center'>
           <div className='w-2/4 max-tablet:w-auto'>
             <h3 className='font-bold text-4xl text-center max-[530px]:text-2xl max-[350px]:text-xl mb-5'>Bienvenidos A La Institucion Educativa Casimiro Raul Maestre</h3>
             <picture className='flex items-center justify-center'>
@@ -43,7 +41,7 @@ export default function Admissions(): JSX.Element {
           </div>
 
 
-        </section>
+        </div>
       </div>
     </Fragment>
   );

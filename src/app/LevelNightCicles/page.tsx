@@ -1,9 +1,11 @@
+'use client';
+
+
 import { Fragment } from 'react';
-import NavBar from '../components/NavBar';
+import NavBar from '../components/Navbar';
+
 
 export default function LevelNightCicles(): JSX.Element {
-
-  
   return (
     <Fragment>
       <NavBar />

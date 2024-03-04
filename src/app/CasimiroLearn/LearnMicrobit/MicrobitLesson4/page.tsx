@@ -2,7 +2,7 @@
 
 
 import { Fragment } from 'react';
-import { Image, Link, Button } from '@nextui-org/react';
+import { Link, Button } from '@nextui-org/react';
 
 
 export default function MicrobitLesson4(): JSX.Element {
@@ -63,7 +63,7 @@ export default function MicrobitLesson4(): JSX.Element {
 
 
         <div className='flex items-center justify-between mt-10'>
-          <Link href='/CasimiroLearn/LearnMicrobit' className=''>
+          <Link href='/CasimiroLearn/LearnMicrobit/MicrobitLesson3' className=''>
             <Button color='primary' radius='none' className='text-xl p-6 max-[396px]:w-full min-[455px]:text-lg max-[455px]:py-2 max-[396px]:text-small' variant='ghost'>Anterior</Button>
           </Link>
           <Link href='/CasimiroLearn/LearnMicrobit/MicrobitLesson5' className=''>

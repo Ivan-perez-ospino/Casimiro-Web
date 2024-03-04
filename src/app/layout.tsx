@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
-        <link rel='icon' href='/casimiro-logo.svg' type='image/gif 'sizes='16x16'></link>
+        <link rel='icon' href='/casimiro-logo.svg' type='image/gif' sizes='16x16'></link>
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'></link>
       </head>
       <body className={outfit.className}>
