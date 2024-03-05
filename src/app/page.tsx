@@ -16,7 +16,7 @@ export default function HomePage(): JSX.Element {
           <div className='my-20'>
             <main className='flex justify-evenly'>
               <picture className='flex items-center justify-center w-2/4 max-tablet:hidden'>
-                <Image src='./ESCUDO 2014.PNG' alt='Image Escude' width={400} height={500} />
+                <Image src='./ESCUDO 2014.PNG' alt='Image Escude' className='w-unit-6xl' width={390} height={390} />
               </picture>
               <div className='flex flex-col items-center justify-center w-2/4 max-tablet:w-auto'>
                 <h1 className='font-extrabold text-6xl text-center max-[455px]:text-4xl max-[396px]:text-xl'>Bienvenido Al Sitio Web De La Institucion Educativa Casimiro Raul Maestre.</h1>
