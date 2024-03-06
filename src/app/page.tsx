@@ -7,8 +7,6 @@ import NavbarHome from './components/Navbar';
 
 
 export default function HomePage(): JSX.Element {
-
-
   return (
     <Fragment>
       <NextUIProvider>
@@ -18,9 +16,9 @@ export default function HomePage(): JSX.Element {
               <picture className='flex items-center justify-center w-2/4 max-tablet:hidden'>
                 <Image src='./ESCUDO 2014.PNG' alt='Image Escude' className='w-unit-6xl' width={390} height={390} />
               </picture>
-              <div className='flex flex-col items-center justify-center w-2/4 max-tablet:w-auto'>
+              <div className='flex flex-col items-center justify-center w-2/4 max-tablet:w-auto px-2'>
                 <h1 className='font-extrabold text-6xl text-center max-[455px]:text-4xl max-[396px]:text-xl'>Bienvenido Al Sitio Web De La Institucion Educativa Casimiro Raul Maestre.</h1>
-                <picture className='flex items-center justify-center w-2/4 hidden max-tablet:flex mt-6'>
+                <picture className='items-center justify-center w-2/4 hidden max-tablet:flex mt-6'>
                   <Image src='./ESCUDO 2014.PNG' alt='Image Escude' width={600} height={600} />
                 </picture>
                 <div className='flex flex-wrap items-center justify-center gap-10 my-20 max-[396px]:gap-5 max-tablet:flex-col'>
